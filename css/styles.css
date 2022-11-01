@@ -1,0 +1,270 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+.board{
+  padding: 20px;
+  
+}
+header {
+  height: 70px;
+  background-color: #ffffff;
+  padding: 10px 0;
+}
+.menu-wrap {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 15px;
+}
+.logo-img {
+  padding-top: 0%;
+  
+  height: 60px;
+}
+.menu-icon {
+  font-size: 2.8em;
+  color: #2edf16;
+  line-height: 50px;
+}
+nav {
+  position: absolute;
+  background-color: #0b07e7;
+  top:70px;
+  left:0;
+  width: 100%;
+}
+nav ul {
+  list-style-type: none;
+  max-height: 0px;
+  overflow: hidden;
+  transition: all 0.5s;
+}
+nav ul li {
+  padding: 0 15px;
+}
+nav ul li a {
+  display: inline-block;
+  padding: 12px;
+  /* Add your custom styles below to change appearance of links */
+  color: #000000;
+  text-decoration: none;
+  letter-spacing: 0.05em;
+}
+nav ul li a:hover, nav ul li a:focus {
+  color: #eb6f4a;
+}
+#checkbox {
+  display: none;
+}
+#checkbox:checked ~ nav ul {
+  max-height: 200px;
+  padding: 15px 0;
+  transition: all 0.5s;
+}
+
+@media (min-width: 768px) { 
+  .menu-icon {
+      display: none;
+  }
+  nav {
+      position: relative;
+      top: -10px;
+      background-color: transparent;
+  }
+  nav ul {
+      max-height: 70px;
+      padding: 15px 0;
+      text-align: right;
+  }
+  nav ul li {
+      display: inline-flex;
+      padding-left: 20px;
+  }
+}
+
+
+a {
+  color: rgb(0, 0, 0);
+}
+.shfooter .collapse {
+  display: inherit;
+}
+@media (max-width: 767px) {
+  .shfooter ul {
+    margin-bottom: 0;
+  }
+ 
+  .shfooter .collapse {
+    display: none;
+  }
+ 
+  .shfooter .collapse.show {
+    display: block;
+  }
+ 
+  .shfooter .title .fa-angle-up,
+  .shfooter .title[aria-expanded="true"] .fa-angle-down {
+    display: none;
+  }
+ 
+  .shfooter .title[aria-expanded="true"] .fa-angle-up {
+    display: block;
+  }
+ 
+  .shfooter .navbar-toggler {
+    display: inline-block;
+    padding: 0;
+  }
+}
+ 
+.resize {
+  text-align: center;
+}
+.resize {
+  margin-top: 3rem;
+  font-size: 1.25rem;
+}
+/*RESIZESCREEN ANIMATION*/
+.fa-angle-double-right {
+  animation: rightanime 1s linear infinite;
+}
+ 
+.fa-angle-double-left {
+  animation: leftanime 1s linear infinite;
+}
+@keyframes rightanime {
+  50% {
+    transform: translateX(10px);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateX(10px);
+    opacity: 0;
+  }
+}
+@keyframes leftanime {
+  50% {
+    transform: translateX(-10px);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateX(-10px);
+    opacity: 0;
+  }
+}
+h5{
+  color: rgb(35, 0, 190);
+}
+h{
+
+color: rgb(0, 0, 0);
+}
+.text-center{
+  background-color: rgb(187, 187, 179);
+
+}
+.ftr{
+background-color: #ffffff;
+}
+
+
+
+
+
+.card7{
+  background-image: url("background.jpg") ;
+  background-size: cover;
+  height: 300px;
+}
+.board{
+  padding: 20px;
+  
+}
+
+#row1{
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: auto;
+  background-color: rgb(0, 0, 99);
+}
+.cards{
+  background-color: rgb(255, 251, 251);
+  margin-top: 0px;
+  
+}
+#tables{
+  margin-top: 10px;
+  background-image: url("back.png");
+  padding: 50px;
+  background-size: cover;
+}
+.cards2{
+  background-color: lightgray;
+  margin-top: 20px;
+  
+}
+
+
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  padding: 0px 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 0px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+
+
+.container5 {
+  float: left;
+  width: 48%;
+  margin-left: 10px;
+ margin-right: 10px;
+  margin-top: 20px;
+  
+ 
+  padding: 10px 10px;
+  position: relative;
+  font-family: Arial;
+}
+
+
+ .text-block2 {
+  position: absolute;
+  padding-right: 20px;
+  margin-right: 20px;
+  bottom: 0;
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
